@@ -1,9 +1,23 @@
+## 图块地形
+
+| 操作 | 变更类型 | 说明 |
+|------|----------|------|
+| 图集显示控制 | ❌ 移除 | 图集下拉菜单 |
+| 缩放控制条 | ❌ 移除 | UI缩放滑块 |
+| Watcher.gd | ❌ 移除 | 意义不明的监视器脚本(暂未发现bug) |
+| 版本要求 | ⚠️ 4.7 stable +
+| 双击打开地形编辑类型窗口 | ✅ 新增
+| 右侧图集显示控制 | ✅ 新增 | 拖拽式开关图集显示 |
+| 滚轮缩放 / 按下平移 | ✅ 新增 | 图集显示控制 |
+| 铺满视图 / F | ✅ 新增
+
+  <img width="722" height="366" alt="K6O70`H46AQ 5`RGN))4L$N" src="https://github.com/user-attachments/assets/3e4dde34-a731-4da1-8a3f-1a4ee24e7d6b" />
+
 # better-terrain
+
 Terrain plugin for Godot 4's tilemap.
 
 This plugin implements autotile-style terrain system with multiple connections. It works with the existing tilemaps and tilesets alongside Godot 4 features.
-
-![Example of terrain system in use](https://github.com/Portponky/better-terrain/assets/33663279/a8399964-4595-4638-b979-fd73223a4245)
 
 ### Why?
 
