@@ -274,7 +274,7 @@ func _on_source_button_gui_input(event, button):
             cache_dragging_nodes.append(button)
             _on_terrain_enable_id_pressed(button.id)
 
-func about_to_be_visible(visible: bool) -> void:
+func about_to_be_visible(visible: bool=false) -> void:
     if !visible:
         return
 

@@ -2,7 +2,8 @@
 extends EditorPlugin
 
 const AUTOLOAD_NAME = "BetterTerrain"
-var dock : Control
+var dock : EditorDock
+var dock_scene : Control
 var button : Button
 
 func _enter_tree() -> void:
@@ -22,18 +23,26 @@ func _enter_tree() -> void:
         )
         get_editor_interface().popup_dialog_centered(confirm)
 
-    dock = load("res://addons/better-terrain/editor/Dock.tscn").instantiate()
-    dock.update_overlay.connect(self.update_overlays)
-    get_editor_interface().get_editor_main_screen().mouse_exited.connect(dock.canvas_mouse_exit)
-    dock.undo_manager = get_undo_redo()
-    button = add_control_to_bottom_panel(dock, "Terrain")
-    button.toggled.connect(dock.about_to_be_visible)
-    dock.force_show_terrains.connect(button.toggled.emit.bind(true))
-    button.visible = false
+
+    dock_scene = load("res://addons/better-terrain/editor/Dock.tscn").instantiate()
+    dock_scene.update_overlay.connect(self.update_overlays)
+    dock_scene.undo_manager = get_undo_redo()
+
+    dock = EditorDock.new()
+    dock.add_child(dock_scene)
+    dock.title = "Terrain"
+    dock.default_slot = EditorDock.DOCK_SLOT_BOTTOM
+    dock.available_layouts = EditorDock.DOCK_LAYOUT_HORIZONTAL | EditorDock.DOCK_LAYOUT_FLOATING
+    dock.dock_icon = preload("res://addons/better-terrain/icon.svg")
+    dock.opened.connect(dock_scene.about_to_be_visible)
+
+    add_dock(dock)
+
+    get_editor_interface().get_editor_main_screen().mouse_exited.connect(dock_scene.canvas_mouse_exit)
 
 
 func _exit_tree() -> void:
-    remove_control_from_bottom_panel(dock)
+    remove_dock(dock)
     dock.queue_free()
 
 
@@ -42,32 +51,32 @@ func _handles(object) -> bool:
 
 
 func _make_visible(visible) -> void:
-    button.visible = visible
+    dock.visible = visible
 
 
 func _edit(object) -> void:
     var new_tileset : TileSet = null
 
     if object is TileMapLayer:
-        dock.tilemap = object
+        dock_scene.tilemap = object
         new_tileset = object.tile_set
     if object is TileSet:
-        dock.tilemap = null
+        dock_scene.tilemap = null
         new_tileset = object
 
-    if dock.tileset != new_tileset:
-        dock.tiles_about_to_change()
-        dock.tileset = new_tileset
-        dock.tiles_changed()
+    if dock_scene.tileset != new_tileset:
+        dock_scene.tiles_about_to_change()
+        dock_scene.tileset = new_tileset
+        dock_scene.tiles_changed()
 
 
 func _forward_canvas_draw_over_viewport(overlay: Control) -> void:
-    if dock.is_visible_in_tree():
-        dock.canvas_draw(overlay)
+    if dock_scene.is_visible_in_tree():
+        dock_scene.canvas_draw(overlay)
 
 
 func _forward_canvas_gui_input(event: InputEvent) -> bool:
-    if !dock.is_visible_in_tree():
+    if !dock_scene.is_visible_in_tree():
         return false
 
-    return dock.canvas_input(event)
+    return dock_scene.canvas_input(event)
