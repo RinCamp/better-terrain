@@ -633,9 +633,23 @@ func canvas_draw(overlay: Control) -> void:
         tiles.append(current_position)
 
     var shape = BetterTerrain.data.cell_polygon(tileset)
+    var uvs = PackedVector2Array([Vector2(0, 0), Vector2(1, 0), Vector2(1, 1), Vector2(0, 1)])
+    var img = null
+
+    if overlay.texture_filter != CanvasItem.TEXTURE_FILTER_NEAREST:
+        overlay.texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
+
+    if terrain.has("icon") and terrain["icon"].has("path"):
+        var path = terrain["icon"]["path"]
+        if FileAccess.file_exists(path):
+            img = load(path)
+
     for t in tiles:
         var tile_transform := Transform2D(0.0, tilemap.tile_set.tile_size, 0.0, tilemap.map_to_local(t))
-        overlay.draw_colored_polygon(transform * tile_transform * shape, Color(terrain.color, 0.5))
+        if shape.size() == 4 and img:
+            overlay.draw_colored_polygon(transform * tile_transform * shape, Color(1,1,1,0.5), uvs, img)
+        else:
+            overlay.draw_colored_polygon(transform * tile_transform * shape, Color(terrain.color, 0.5))
 
 
 func canvas_input(event: InputEvent) -> bool:
