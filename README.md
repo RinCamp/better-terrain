@@ -10,6 +10,7 @@
 | 右侧图集显示控制 | ✅ 新增 | 拖拽式开关图集显示 |
 | 滚轮缩放 / 按下平移 | ✅ 新增 | 图集显示控制 |
 | 铺满视图 / F | ✅ 新增
+| 地形设置icon则在绘制时使用icon放置预览 | ✅ 新增
 
   <img width="722" height="366" alt="K6O70`H46AQ 5`RGN))4L$N" src="https://github.com/user-attachments/assets/3e4dde34-a731-4da1-8a3f-1a4ee24e7d6b" />
 
