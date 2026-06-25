@@ -51,7 +51,10 @@ func _handles(object) -> bool:
 
 
 func _make_visible(visible) -> void:
-    dock.visible = visible
+    if visible:
+        dock.open()
+    else:
+        dock.close()
 
 
 func _edit(object) -> void:
