@@ -32,14 +32,8 @@ unicode = 100
 events = [SubResource("InputEventKey_saph6")]
 
 [sub_resource type="DPITexture" id="DPITexture_yone6"]
-_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"m7 1c-.554 0-1 .446-1 1v2h4v-2c0-.554-.446-1-1-1zm-1 4v7l2 3 2-3v-7zm1 1h1v5h-1z\"/></svg>
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#ff5d5d\" d=\"M2 1v8.586l1.293-1.293a1 1 0 0 1 1.414 0L7 10.587l2.293-2.293a1 1 0 0 1 1.414 0L13 10.586l1-1V6H9V1H2zm8 0v4h4zm-6 9.414-2 2V15h12v-2.586l-.293.293a1 1 0 0 1-1.414 0L10 10.414l-2.293 2.293a1 1 0 0 1-1.414 0L4 10.414z\"/></svg>
 "
-saturation = 1.25
-color_map = {
-Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
-Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
-Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
-}
 
 [sub_resource type="InputEventKey" id="InputEventKey_q1v0d"]
 device = -1
@@ -48,16 +42,6 @@ unicode = 108
 
 [sub_resource type="Shortcut" id="Shortcut_wc6bu"]
 events = [SubResource("InputEventKey_q1v0d")]
-
-[sub_resource type="DPITexture" id="DPITexture_gfl3t"]
-_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"12\"><path fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-width=\"2\" d=\"m2 10 8-8\"/></svg>
-"
-saturation = 1.25
-color_map = {
-Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
-Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
-Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
-}
 
 [sub_resource type="InputEventKey" id="InputEventKey_68n3h"]
 device = -1
@@ -72,16 +56,6 @@ unicode = 99
 [sub_resource type="Shortcut" id="Shortcut_tcjet"]
 events = [SubResource("InputEventKey_68n3h"), SubResource("InputEventKey_qcu1e")]
 
-[sub_resource type="DPITexture" id="DPITexture_ky606"]
-_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"none\" stroke=\"#e0e0e0\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M2 4h12v8H2z\"/></svg>
-"
-saturation = 1.25
-color_map = {
-Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
-Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
-Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
-}
-
 [sub_resource type="InputEventKey" id="InputEventKey_grxy4"]
 device = -1
 keycode = 66
@@ -89,16 +63,6 @@ unicode = 98
 
 [sub_resource type="Shortcut" id="Shortcut_46fac"]
 events = [SubResource("InputEventKey_grxy4")]
-
-[sub_resource type="DPITexture" id="DPITexture_3tusw"]
-_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"M8.693 2.51a.754.754 0 0 0-1.067 0l-.8.8 1.538 1.54a1.132 1.132 0 1 1-1.066 1.066l-1.54-1.54-.8.8-1.6-1.6A.754.754 0 0 1 4.425 2.51l3.273 3.273a.754.754 0 1 0 .533-.533L4.958 1.977A1.509 1.509 0 0 0 2.824 4.11l1.6 1.6-3.2 3.201a.754.754 0 0 0 0 1.067l4.268 4.268a.754.754 0 0 0 1.067 0l6.935-6.935zm4.801 5.869c-1.51 2.263-1.51 2.263-1.51 3.018 0 .754.756 1.509 1.51 1.509s1.51-.755 1.51-1.51c0-.754 0-.754-1.51-3.017z\"/></svg>
-"
-saturation = 1.25
-color_map = {
-Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
-Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
-Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
-}
 
 [sub_resource type="InputEventKey" id="InputEventKey_xd61m"]
 device = -1
@@ -111,142 +75,12 @@ events = [SubResource("InputEventKey_xd61m")]
 [sub_resource type="ButtonGroup" id="ButtonGroup_3wrxn"]
 allow_unpress = true
 
-[sub_resource type="DPITexture" id="DPITexture_uenbg"]
-_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"M14 6.932 2 1.995l4.936 12 1.421-4.23 2.826 2.825 1.412-1.412L9.77 8.352z\"/></svg>
-"
-saturation = 1.25
-color_map = {
-Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
-Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
-Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
-}
-
-[sub_resource type="DPITexture" id="DPITexture_vs13h"]
-_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"none\" stroke=\"#e0e0e0\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M6 14h4m-2-4V2m4 5L8 2 4 7\"/></svg>
-"
-saturation = 1.25
-color_map = {
-Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
-Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
-Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
-}
-
-[sub_resource type="DPITexture" id="DPITexture_7hkg2"]
-_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"none\" stroke=\"#e0e0e0\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M10 2H6m2 4v8M4 9l4 5 4-5\"/></svg>
-"
-saturation = 1.25
-color_map = {
-Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
-Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
-Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
-}
-
-[sub_resource type="DPITexture" id="DPITexture_0uxpc"]
-_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"M4.5 5.25H15v2H4.5zM2 4.283v-1h1l1 2zm0 4v1h1l1-2zm-.621-2.707-.707.707.707.707L3.5 6.283zM4.5 1.75H15v2H4.5zm0 7H15v2H4.5zm0 3.5H15v2H4.5z\"/></svg>
-"
-saturation = 1.25
-color_map = {
-Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
-Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
-Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
-}
-
-[sub_resource type="DPITexture" id="DPITexture_rvmqq"]
-_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"M1 1v14h14V1zm2 2h2v2H3zm4 0h2v2H7zm4 0h2v2h-2zM3 7h2v2H3zm4 0h2v2H7zm4 0h2v2h-2zm-8 4h2v2H3zm4 0h2v2H7zm4 0h2v2h-2z\"/></svg>
-"
-saturation = 1.25
-color_map = {
-Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
-Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
-Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
-}
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mpeb7"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
 content_margin_bottom = 4.0
 bg_color = Color(0, 0, 0, 0.4)
-
-[sub_resource type="DPITexture" id="DPITexture_e8flt"]
-_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"m2 2v5h5v-5zm7 0v5h5v-5zm-7 7v5h5v-5zm7 0v5h5v-5z\"/></svg>
-"
-saturation = 1.25
-color_map = {
-Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
-Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
-Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
-}
-
-[sub_resource type="DPITexture" id="DPITexture_ljqbj"]
-_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"M8 3C5.5 3 2.5 4 1.05 7.7a1 1 0 0 0 0 .6C2.5 12 5.5 13 8 13s5.5-1 6.95-4.7a1 1 0 0 0 0-.6C13.5 4 10.5 3 8 3zm0 1.25a3.75 3.75 0 1 1 0 7.5 3.75 3.75 0 0 1 0-7.5zM8 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4z\"/></svg>
-"
-saturation = 1.25
-color_map = {
-Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
-Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
-Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
-}
-
-[sub_resource type="DPITexture" id="DPITexture_ae1f4"]
-_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"m7 1v6h-6v2h6v6h2v-6h6v-2h-6v-6z\"/></svg>
-"
-saturation = 1.25
-color_map = {
-Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
-Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
-Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
-}
-
-[sub_resource type="DPITexture" id="DPITexture_0lyjf"]
-_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"M4 1 3 3l1 2v4H2v3.5a2.5 2.5 0 0 0 5 0V9H5V5l1-2-1-2zm6 .174a3 3 0 0 0 0 5.652V14a1 1 0 0 0 2 0V6.824a3 3 0 0 0 0-5.648V4a1 1 0 0 1-2 0z\"/></svg>
-"
-saturation = 1.25
-color_map = {
-Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
-Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
-Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
-}
-
-[sub_resource type="DPITexture" id="DPITexture_5winp"]
-_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"m8 1c-1.108 0-2 .892-2 2v2h-1v2h1v5a2 2 0 0 0 1 1.7285v1.2715h2v-1.2695a2 2 0 0 0 1-1.7305v-5h1v-2h-1v-2c0-1.108-.892-2-2-2zm-1 6h2v5a1 1 0 0 1 -1 1 1 1 0 0 1 -1-1z\"/></svg>
-"
-saturation = 1.25
-color_map = {
-Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
-Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
-Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
-}
-
-[sub_resource type="DPITexture" id="DPITexture_tkw0f"]
-_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"none\" stroke=\"#e0e0e0\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M8 11V4L4 8m4-4 4 4\"/></svg>
-"
-saturation = 1.25
-color_map = {
-Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
-Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
-Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
-}
-
-[sub_resource type="DPITexture" id="DPITexture_74fi6"]
-_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"none\" stroke=\"#e0e0e0\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M8 5v7l4-4m-4 4L4 8\"/></svg>
-"
-saturation = 1.25
-color_map = {
-Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
-Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
-Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
-}
-
-[sub_resource type="DPITexture" id="DPITexture_h2drh"]
-_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"m5 1v1h-4v2h14v-2h-4v-1zm-3 4v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-8zm1 2h2v6h-2zm4 0h2v6h-2zm4 0h2v6h-2z\"/></svg>
-"
-saturation = 1.25
-color_map = {
-Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
-Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
-Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
-}
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_lcrka"]
 shader = ExtResource("17_iuya8")
@@ -312,7 +146,7 @@ tooltip_text = "Draw line"
 toggle_mode = true
 button_group = SubResource("ButtonGroup_aon7c")
 shortcut = SubResource("Shortcut_wc6bu")
-icon = SubResource("DPITexture_gfl3t")
+icon = SubResource("DPITexture_yone6")
 flat = true
 
 [node name="Rectangle" type="Button" parent="VBox/Toolbar" unique_id=1670618916]
@@ -322,7 +156,7 @@ tooltip_text = "Fill a rectangle of terrain"
 toggle_mode = true
 button_group = SubResource("ButtonGroup_aon7c")
 shortcut = SubResource("Shortcut_tcjet")
-icon = SubResource("DPITexture_ky606")
+icon = SubResource("DPITexture_yone6")
 flat = true
 
 [node name="Fill" type="Button" parent="VBox/Toolbar" unique_id=854640207]
@@ -332,7 +166,7 @@ tooltip_text = "Bucket fill terrain"
 toggle_mode = true
 button_group = SubResource("ButtonGroup_aon7c")
 shortcut = SubResource("Shortcut_46fac")
-icon = SubResource("DPITexture_3tusw")
+icon = SubResource("DPITexture_yone6")
 flat = true
 
 [node name="Replace" type="Button" parent="VBox/Toolbar" unique_id=2069428100]
@@ -352,7 +186,7 @@ size_flags_vertical = 4
 tooltip_text = "Select"
 toggle_mode = true
 button_group = SubResource("ButtonGroup_3wrxn")
-icon = SubResource("DPITexture_uenbg")
+icon = SubResource("DPITexture_yone6")
 flat = true
 
 [node name="PaintType" type="Button" parent="VBox/Toolbar" unique_id=347279100]
@@ -449,14 +283,14 @@ layout_mode = 2
 layout_mode = 2
 size_flags_vertical = 4
 tooltip_text = "Select previous layer"
-icon = SubResource("DPITexture_vs13h")
+icon = SubResource("DPITexture_yone6")
 flat = true
 
 [node name="LayerDown" type="Button" parent="VBox/Toolbar" unique_id=1025923588]
 layout_mode = 2
 size_flags_vertical = 4
 tooltip_text = "Select next layer"
-icon = SubResource("DPITexture_7hkg2")
+icon = SubResource("DPITexture_yone6")
 flat = true
 
 [node name="LayerHighlight" type="Button" parent="VBox/Toolbar" unique_id=655617216]
@@ -464,7 +298,7 @@ layout_mode = 2
 size_flags_vertical = 4
 tooltip_text = "Highlight selected layer"
 toggle_mode = true
-icon = SubResource("DPITexture_0uxpc")
+icon = SubResource("DPITexture_yone6")
 flat = true
 
 [node name="LayerGrid" type="Button" parent="VBox/Toolbar" unique_id=1501366247]
@@ -472,7 +306,7 @@ layout_mode = 2
 size_flags_vertical = 4
 tooltip_text = "Toggle grid visibility"
 toggle_mode = true
-icon = SubResource("DPITexture_rvmqq")
+icon = SubResource("DPITexture_yone6")
 flat = true
 
 [node name="HSplit" type="HSplitContainer" parent="VBox" unique_id=1835561857]
@@ -506,7 +340,7 @@ auto_translate_mode = 1
 layout_mode = 2
 tooltip_text = "Toggle quick mode. Only shows paintable terrain types."
 toggle_mode = true
-icon = SubResource("DPITexture_e8flt")
+icon = SubResource("DPITexture_yone6")
 flat = true
 
 [node name="QuickMode" type="Button" parent="VBox/HSplit/Terrains/LowerToolbar" unique_id=2016579319]
@@ -514,7 +348,7 @@ auto_translate_mode = 1
 layout_mode = 2
 tooltip_text = "Toggle quick mode. Only shows paintable terrain types."
 toggle_mode = true
-icon = SubResource("DPITexture_ljqbj")
+icon = SubResource("DPITexture_yone6")
 flat = true
 
 [node name="VSeparator" type="VSeparator" parent="VBox/HSplit/Terrains/LowerToolbar" unique_id=1160983237]
@@ -528,38 +362,38 @@ alignment = 2
 [node name="AddTerrain" type="Button" parent="VBox/HSplit/Terrains/LowerToolbar/EditTools" unique_id=706775639]
 layout_mode = 2
 tooltip_text = "Add terrain type"
-icon = SubResource("DPITexture_ae1f4")
+icon = SubResource("DPITexture_yone6")
 flat = true
 
 [node name="EditTerrain" type="Button" parent="VBox/HSplit/Terrains/LowerToolbar/EditTools" unique_id=1828898781]
 layout_mode = 2
 tooltip_text = "Edit terrain type"
-icon = SubResource("DPITexture_0lyjf")
+icon = SubResource("DPITexture_yone6")
 flat = true
 
 [node name="PickIcon" type="Button" parent="VBox/HSplit/Terrains/LowerToolbar/EditTools" unique_id=29721781]
 layout_mode = 2
 tooltip_text = "Pick terrain icon from tileset"
 toggle_mode = true
-icon = SubResource("DPITexture_5winp")
+icon = SubResource("DPITexture_yone6")
 flat = true
 
 [node name="MoveUp" type="Button" parent="VBox/HSplit/Terrains/LowerToolbar/EditTools" unique_id=709075294]
 layout_mode = 2
 tooltip_text = "Move selected terrain up"
-icon = SubResource("DPITexture_tkw0f")
+icon = SubResource("DPITexture_yone6")
 flat = true
 
 [node name="MoveDown" type="Button" parent="VBox/HSplit/Terrains/LowerToolbar/EditTools" unique_id=2108382436]
 layout_mode = 2
 tooltip_text = "Move selected terrain down"
-icon = SubResource("DPITexture_74fi6")
+icon = SubResource("DPITexture_yone6")
 flat = true
 
 [node name="RemoveTerrain" type="Button" parent="VBox/HSplit/Terrains/LowerToolbar/EditTools" unique_id=1804398579]
 layout_mode = 2
 tooltip_text = "Remove selected terrain type(s)"
-icon = SubResource("DPITexture_h2drh")
+icon = SubResource("DPITexture_yone6")
 flat = true
 
 [node name="HSplitContainer" type="HSplitContainer" parent="VBox/HSplit" unique_id=898427948]

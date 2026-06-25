@@ -171,7 +171,7 @@ func tiles_about_to_change() -> void:
     if tileset and tileset.changed.is_connected(queue_tiles_changed):
         tileset.changed.disconnect(queue_tiles_changed)
 
-
+# TODO 存在不太明显的性能问题, 每次绘制都会删除新建节点
 func tiles_changed() -> void:
     # ensure up to date
     BetterTerrain._update_terrain_data(tileset)
@@ -184,6 +184,7 @@ func tiles_changed() -> void:
     # load terrains from tileset
     var terrain_count := BetterTerrain.terrain_count(tileset)
     var item_count = terrain_count + 1
+
     for i in terrain_count:
         var terrain := BetterTerrain.get_terrain(tileset, i)
         if i >= terrain_list.get_child_count():
@@ -198,6 +199,10 @@ func tiles_changed() -> void:
         var child = terrain_list.get_child(terrain_list.get_child_count() - 1)
         terrain_list.remove_child(child)
         child.free()
+
+    if terrain_list.get_child_count() > 0 and selected_entry < 0:
+        var child = terrain_list.get_child(terrain_list.get_child_count() - 1)
+        child.set_selected(true)
 
     var source_count = tileset.get_source_count() if tileset else 0
 
@@ -484,6 +489,8 @@ func add_terrain_entry(terrain:Dictionary, index:int = -1):
     terrain_list.add_child(entry)
     terrain_list.move_child(entry, index)
 
+    if index == selected_entry:
+        entry.set_selected(true)
 
 func remove_terrain_entry(index: int):
     terrain_list.get_child(index).free()
